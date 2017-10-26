@@ -21,6 +21,7 @@ namespace TravelHub.Sql.Data
         public DbSet<Airport> Airports { get; set; }
         public DbSet<City> Cities { get; set; }
         public DbSet<Location> Locations { get; set; }
+        public DbSet<AirportCode> AirportCodes { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

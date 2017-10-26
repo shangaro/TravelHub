@@ -8,9 +8,10 @@ namespace TravelHub.Models
 {
     public class AirportCode
     {
+        public int Id { get; set; }
         public City City { get; set; }
         //public int CityId { get; set; }
         public IList<Airport> Airports { get; set; }
-        //public int AirportId { get; set; }
+        public int AirportId { get; set; }
     }
 }
