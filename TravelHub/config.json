@@ -3,7 +3,8 @@
     "ToAddress": "shawn@wildermuth.com"
   },
   "ConnectionStrings": {
-    "WorldContextConnection": "Data Source=webulous1.cu0yz3ubqyt1.us-east-2.rds.amazonaws.com;Initial Catalog=TravelHubDev;Persist Security Info=True;User ID=webulous1;Password=webul;"
+    "TravelHubConnection1": "Data Source=webulous1.cu0yz3ubqyt1.us-east-2.rds.amazonaws.com;Initial Catalog=TravelHubDev;Persist Security Info=True;User ID=webulous1;Password=webulous1;",
+    "TravelHubConnection": "Server=(localdb)\\MSSQLLocalDB;Database=TravelHub;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;MultipleActiveResultSets=true;"
   },
   "Keys": {
     "BingKey": "DONTEVERPUTKEYSINSOURCECONTROL"

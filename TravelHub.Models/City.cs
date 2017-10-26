@@ -8,12 +8,15 @@ namespace TravelHub.Models
 {
     public class City
     {
+        public int Id { get; set; }
         public string Code { get; set; }
-        public string Geonames_ID { get; set; }
-        public string name { get; set; }
-        public string state { get; set; }
-        public string country { get; set; }
-        public Location location { get; set; }
-        public string timezone { get; set; }
+        public string Geonames_Id { get; set; }
+        public string Name { get; set; }
+        public string State { get; set; }
+        public string Country { get; set; }
+        public Location Location { get; set; }
+        //note geo location of city is different than that of airport
+        public int LocationId { get; set; }
+        public string Timezone { get; set; }
     }
 }

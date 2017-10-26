@@ -1,19 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using TravelHub.MailService;
+using TravelHub.Sql.Data;
 
-namespace TravelHub
+namespace TravelHub.Web
 {
     public class Startup
     {
-        private IHostingEnvironment _env;
-        private IConfiguration _config;
+        private readonly IHostingEnvironment _env;
+        private readonly IConfiguration _config;
         public Startup(IConfiguration configuration,IHostingEnvironment env)
         {
             _env = env;
@@ -24,7 +22,7 @@ namespace TravelHub
 
         }
 
-        public IConfiguration Configuration { get; }
+        public IConfiguration Configuration => _config;
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -45,15 +43,23 @@ namespace TravelHub
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env,ILoggerFactory factory)
         {
+
+            //initialize automapper
+            //Mapper.Initialize(config =>
+            //{
+            //    config.CreateMap<>()
+            //});
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseBrowserLink();
+                factory.AddDebug(LogLevel.Information);
             }
             else
             {
+                factory.AddDebug(LogLevel.Error);
                 app.UseExceptionHandler("/Home/Error");
             }
 
