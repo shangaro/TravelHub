@@ -7,6 +7,7 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="6.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -15,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TravelHub.MailService\TravelHub.MailService.csproj" />
+    <ProjectReference Include="..\TravelHub.services\TravelHub.services.csproj" />
     <ProjectReference Include="..\TravelHub.Sql.Data\TravelHub.Sql.Data.csproj" />
   </ItemGroup>
 

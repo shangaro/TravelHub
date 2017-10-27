@@ -11,10 +11,11 @@ namespace TravelHub.services.FlightService.Interfaces
 {
     public interface IFlightSearchService
     {
-        void GetFlightXtensiveSearch();
-        void GetFlightLowFareSearch();
-        void GetFlightAffiliateSearch();
-        NearbyAirport GetNearbyAirport(decimal latitude, decimal longtitube, string apiKey);
+        //void GetFlightXtensiveSearch();
+        //void GetFlightLowFareSearch();
+        //void GetFlightAffiliateSearch();
+        //NearbyAirport GetNearbyAirport(decimal latitude, decimal longtitube, string apiKey);
+        object GetIataCode(string iatacode);
 
     }
 }
