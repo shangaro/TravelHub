@@ -22,10 +22,11 @@ namespace TravelHub.Sql.Data
         public DbSet<City> Cities { get; set; }
         public DbSet<Location> Locations { get; set; }
         public DbSet<AirportCode> AirportCodes { get; set; }
+        public DbSet<ApiKey> ApiKeys { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(_config["ConnectionStrings:TravelHubConnection"]);
+            optionsBuilder.UseSqlServer(_config["ConnectionStrings:TravelHubConnection1"]);
 
         }
 

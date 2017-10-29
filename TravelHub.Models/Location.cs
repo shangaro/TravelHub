@@ -3,7 +3,7 @@
     public class Location
     {
         public int Id { get; set; }
-        public decimal Latitude { get; set; }
-        public decimal Longtitude { get; set; }
+        public decimal latitude { get; set; }
+        public decimal longtitude { get; set; }
     }
 }

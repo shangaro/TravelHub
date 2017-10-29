@@ -11,9 +11,10 @@ using TravelHub.Sql.Data;
 namespace TravelHub.Sql.Data.Migrations
 {
     [DbContext(typeof(TravelHubContext))]
-    partial class TravelHubContextModelSnapshot : ModelSnapshot
+    [Migration("20171029012444_init4")]
+    partial class init4
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
