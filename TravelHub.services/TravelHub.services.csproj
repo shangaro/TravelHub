@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TravelHub.Common\TravelHub.Common.csproj" />
     <ProjectReference Include="..\TravelHub.Models\TravelHub.Models.csproj" />
   </ItemGroup>
 

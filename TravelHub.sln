@@ -5,19 +5,17 @@ VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelHub.Web", "TravelHub\TravelHub.Web.csproj", "{40522552-E772-4495-BBAB-48CE5A5D4832}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelHub.MailService", "TravelHub.MailService\TravelHub.MailService.csproj", "{E68455A3-733D-4C96-86AB-DF4ADCFD68ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelHub.MailService", "TravelHub.MailService\TravelHub.MailService.csproj", "{E68455A3-733D-4C96-86AB-DF4ADCFD68ED}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelHub.Sql.Data", "TravelHub.Sql.Data\TravelHub.Sql.Data.csproj", "{D407BF89-2EC9-464F-A7B3-66CAC2CFC2E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelHub.Sql.Data", "TravelHub.Sql.Data\TravelHub.Sql.Data.csproj", "{D407BF89-2EC9-464F-A7B3-66CAC2CFC2E9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelHub.Oracle.Data", "TravelHub.Oracle.Data\TravelHub.Oracle.Data.csproj", "{9F573D38-C70B-4327-B676-222BEF3908BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelHub.Oracle.Data", "TravelHub.Oracle.Data\TravelHub.Oracle.Data.csproj", "{9F573D38-C70B-4327-B676-222BEF3908BF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelHub.Entities", "TravelHub.Entities\TravelHub.Entities.csproj", "{6C65EB54-DE90-4265-AB17-E24A382872BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelHub.Entities", "TravelHub.Entities\TravelHub.Entities.csproj", "{6C65EB54-DE90-4265-AB17-E24A382872BE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelHub.services", "TravelHub.services\TravelHub.services.csproj", "{B66DB74E-A814-4975-ABB3-C1308813F3D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelHub.services", "TravelHub.services\TravelHub.services.csproj", "{B66DB74E-A814-4975-ABB3-C1308813F3D2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelHub.Models", "TravelHub.Models\TravelHub.Models.csproj", "{1C57FB41-D13D-4D2F-BAE3-7EB2D0F9C5BC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelHub.Common", "TravelHub.Common\TravelHub.Common.csproj", "{67FE456E-836F-40FE-902E-1042BB660C7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelHub.Models", "TravelHub.Models\TravelHub.Models.csproj", "{1C57FB41-D13D-4D2F-BAE3-7EB2D0F9C5BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,10 +51,6 @@ Global
 		{1C57FB41-D13D-4D2F-BAE3-7EB2D0F9C5BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C57FB41-D13D-4D2F-BAE3-7EB2D0F9C5BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C57FB41-D13D-4D2F-BAE3-7EB2D0F9C5BC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{67FE456E-836F-40FE-902E-1042BB660C7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{67FE456E-836F-40FE-902E-1042BB660C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{67FE456E-836F-40FE-902E-1042BB660C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{67FE456E-836F-40FE-902E-1042BB660C7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

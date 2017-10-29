@@ -15,7 +15,6 @@ namespace TravelHub.services.FlightService.Interfaces
         void GetFlightLowFareSearch();
         void GetFlightAffiliateSearch();
         NearbyAirport GetNearbyAirport(decimal latitude, decimal longtitube, string apiKey);
-        object GetLocationByIATA(string IATA);
 
     }
 }

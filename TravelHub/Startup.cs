@@ -3,10 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using TravelHub.Common.ConfigurationService;
 using TravelHub.MailService;
-using TravelHub.services.FlightService.Implementation;
-using TravelHub.services.FlightService.Interfaces;
 using TravelHub.Sql.Data;
 
 namespace TravelHub.Web
@@ -40,7 +37,6 @@ namespace TravelHub.Web
             {
                 //implement a real mail service
             }
-            RegisterAllServices(services);
 
             //add database context
             services.AddDbContext<TravelHubContext>();
@@ -76,12 +72,6 @@ namespace TravelHub.Web
                     template: "{controller=Home}/{action=Index}/{id?}");
                     
             });
-        }
-
-        public void RegisterAllServices(IServiceCollection services)
-        {
-            services.AddTransient<IFlightSearchService,FlightSearchService>();
-            services.AddSingleton<IHttpSocketService, HttpSocketService>();
         }
     }
 }

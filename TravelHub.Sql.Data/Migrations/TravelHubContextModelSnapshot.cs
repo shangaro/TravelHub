@@ -74,22 +74,6 @@ namespace TravelHub.Sql.Data.Migrations
                     b.ToTable("AirportCodes");
                 });
 
-            modelBuilder.Entity("TravelHub.Models.ApiKey", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<bool>("Active");
-
-                    b.Property<string>("ApiSource");
-
-                    b.Property<string>("apiKey");
-
-                    b.HasKey("id");
-
-                    b.ToTable("ApiKeys");
-                });
-
             modelBuilder.Entity("TravelHub.Models.City", b =>
                 {
                     b.Property<int>("Id")
