@@ -1,56 +1,75 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@using System.Globalization
+@{
+    ViewBag.Title = "Service App DashBoard";
 }
 
 
-<div class="lamo" >
-    <div class="jumbotron">
+@*<div class="lamo" >
+        <div class="jumbotron">
 
-        <div class="container-fluid body-content">
-            <div class="row">
-                <button class="btn btn-group-sm pull-left">RoundTrip</button>
-                <button class="btn btn-group-sm pull-left">One way</button>
-                <button class="btn btn-group-sm pull-left">Many cities</button>
-                <button class="dropdown-toggle btn btn-group-sm pull-right dropdown" type="button" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="True">
-                    Dropdown <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li>Action</li>
-                    <li>Premium Employee</li>
-                    <li>Business Class</li>
-                </ul>
-                <button class="btn btn-group-sm pull-right dropdown">1 adult<span class="caret"></span></button>
+            <div class="container-fluid body-content">
+                <div class="row">
+                    <button class="btn btn-group-sm pull-left">RoundTrip</button>
+                    <button class="btn btn-group-sm pull-left">One way</button>
+                    <button class="btn btn-group-sm pull-left">Many cities</button>
+                    <button class="dropdown-toggle btn btn-group-sm pull-right dropdown" type="button" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="True">
+                        Dropdown <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li>Action</li>
+                        <li>Premium Employee</li>
+                        <li>Business Class</li>
+                    </ul>
+                    <button class="btn btn-group-sm pull-right dropdown">1 adult<span class="caret"></span></button>
+                </div>
+                <div class="WTP-1"></div>
+                <table class="table table-responsive">
+                    <tbody class="form-group-sm">
+                    <tr>
+                        <td>
+                            <input type="text" class="form-control" placeholder="From" style="text-align: left"/>
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" placeholder="To" style="text-align: left"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="input-group">
+                            <span class="input-group-addon">Departure Date</span>
+                            <input type="text" class="form-control" placeholder="To" style="text-align: left"/>
+                        </td>
+                        <td class="input-group">
+                            <span class="input-group-addon">Arrival Date</span>
+                            <input type="text" class="form-control" placeholder="To" style="text-align: left"/>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+                <div class="">
+                    <button class="btn-group-sm" style="margin-left:10px">
+                            Search
+                    </button>
+                </div>
             </div>
-            <div class="WTP-1"></div>
-            <table class="table table-responsive">
-                <tbody class="form-group-sm">
-                <tr>
-                    <td>
-                        <input type="text" class="form-control" placeholder="From" style="text-align: left"/>
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" placeholder="To" style="text-align: left"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="input-group">
-                        <span class="input-group-addon">Departure Date</span>
-                        <input type="text" class="form-control" placeholder="To" style="text-align: left"/>
-                    </td>
-                    <td class="input-group">
-                        <span class="input-group-addon">Arrival Date</span>
-                        <input type="text" class="form-control" placeholder="To" style="text-align: left"/>
-                    </td>
-                </tr>
-                
-                </tbody>
-            </table>
-            <div class="">
-                <button class="btn-group-sm" style="margin-left:10px">
-                        Search
-                </button>
+
+        </div>
+    </div>*@
+
+<link href="~/css/kendo.min.css" rel="stylesheet" />
+<link href="~/css/site.min.css" rel="stylesheet" />
+
+<div class="container-fluid jumbotron">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="PrevYearToggle" style="position: relative;left: 20px;top: 30px">
+                <input type="checkbox" id="PrevYearToggle" class="k-checkbox" />
+                <label class="k-checkbox-label h4" for="PrevYearToggle">Previous Year</label>
             </div>
+            <div class="col-md-12">
+                <div id="jobTable"></div>
+            </div>
+
         </div>
 
     </div>
-</div>

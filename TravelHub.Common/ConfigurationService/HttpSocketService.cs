@@ -12,16 +12,17 @@ namespace TravelHub.Common.ConfigurationService
     public class HttpSocketService:IHttpSocketService
     {
         public HttpClient Client;
-        private static readonly string BaseUrl = ApiEndpoints.AmdLocationInfoEndPoint;
+        private static readonly string BaseUrl = ApiEndpoints.NewsAPIBaseUri;
         public HttpSocketService()
         {
             Client = new HttpClient
             {
                 BaseAddress = new Uri(BaseUrl)
             };
+
             Initialize();
         }
-        public void Initialize()
+        private void Initialize()
         {
             Client.DefaultRequestHeaders.Accept.Clear();
             Client.DefaultRequestHeaders.Accept.Clear();
@@ -31,6 +32,5 @@ namespace TravelHub.Common.ConfigurationService
         }
 
         public HttpClient GetClient() => Client;
-
     }
 }

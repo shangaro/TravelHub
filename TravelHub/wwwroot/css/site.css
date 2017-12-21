@@ -55,3 +55,6 @@
     padding-top: 90px;
     margin-top: 10px;
 }
+div.k-loading-mask {
+    z-index: 3; /* must be larger than the z-index:2 of #container */
+}

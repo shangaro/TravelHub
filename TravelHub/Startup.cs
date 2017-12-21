@@ -7,6 +7,7 @@ using TravelHub.Common.ConfigurationService;
 using TravelHub.MailService;
 using TravelHub.services.FlightService.Implementation;
 using TravelHub.services.FlightService.Interfaces;
+using TravelHub.services.NewsService.Implementation;
 using TravelHub.Sql.Data;
 
 namespace TravelHub.Web
@@ -82,6 +83,7 @@ namespace TravelHub.Web
         {
             services.AddTransient<IFlightSearchService,FlightSearchService>();
             services.AddSingleton<IHttpSocketService, HttpSocketService>();
+            services.AddTransient<INewsApiService, NewsApiService>();
         }
     }
 }

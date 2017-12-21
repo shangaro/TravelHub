@@ -4,7 +4,7 @@ namespace TravelHub.Common.ConfigurationService
 {
     public interface IHttpSocketService
     {
-        void Initialize();
+        
         HttpClient GetClient();
 
     }
